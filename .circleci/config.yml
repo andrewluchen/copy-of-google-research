@@ -12,7 +12,7 @@ jobs:
       - run: apt-get update -qq
       - run: pip install --upgrade pip
       - run: pip install --upgrade virtualenv
-      - run: ./<<parameters.PROJECT>/run.sh
+      - run: ./<<parameters.PROJECT>>/run.sh
 
 workflows:
   all-tests:  # This is the workflow name.
