@@ -12,6 +12,8 @@ jobs:
       - run: sudo apt-get update -qq
       - run: pip install --upgrade pip
       - run: pip install --upgrade virtualenv
+      - checkout
+      - run: ls
       - run: ./<<parameters.PROJECT>>/run.sh
 
 workflows:
