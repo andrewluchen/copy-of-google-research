@@ -9,7 +9,7 @@ jobs:
     docker:
       - image: 'cimg/python:3.9.0'
     steps:
-      - run: apt-get update -qq
+      - run: sudo apt-get update -qq
       - run: pip install --upgrade pip
       - run: pip install --upgrade virtualenv
       - run: ./<<parameters.PROJECT>>/run.sh
