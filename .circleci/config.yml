@@ -17,7 +17,9 @@ jobs:
 workflows:
   all-tests:  # This is the workflow name.
     jobs:
-      job:  # This matches the job name above.
-        matrix:
-          parameters:
-            PROJECT: ["abps", "albert"]
+      - job:  # This matches the job name above.
+          matrix:
+            parameters:
+              PROJECT:
+                - "abps"
+                - "albert"
